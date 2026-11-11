@@ -1,0 +1,440 @@
+Built-in Data Types -
+
+In programming, data type is an important concept.
+
+Variables can store data of different types, and different types can do different things.
+
+Python has the following data types built-in by default, in these categories:
+
+
+Text Type : str
+
+Numeric Types :  int, float, complex
+
+Sequence Type : list, tuple, range
+
+Mapping Type : dict
+
+Set Types : set, frozenset
+
+Boolean Type : bool
+
+Binary Types : bytes, bytearray , memoryview.
+
+
+
+Getting the Data Type -
+
+You can get the data type of any object by using the type() function:
+
+
+
+
+Python Numbers -
+
+There are three numeric types in Python:
+
+. int
+. float
+. complex
+
+
+Example :
+
+X = 1 # int
+
+y = 2.8 # float
+
+z = 1j # complex
+
+
+
+
+Random Number -
+
+Python does not have a random() function to make a random number, but Python has a built-in module called random that can be
+used to make random numbers:
+
+Example :
+
+Import the random module, and display a random number between 1 and 9:
+
+import random
+
+print(random.randrange(1, 10))
+
+
+
+
+Strings are Arrays -
+
+Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+
+However, Python does not have a character data type, a single character is simply a string with a length of 1.
+
+Square brackets can be used to access elements of the string.
+
+Example :
+
+Get the character at position 1 (remember that the first character has the position 0):
+
+a = "Hello, World!"
+print(a[1])
+
+
+
+
+Slicing -
+
+You can return a range of characters by using the slice syntax.
+
+Specify the start index and the end index, separated by a colon, to return a part of the string.
+
+Example :
+
+Get the characters from position 2 to position 5 (not included):
+
+b = "Hello, World!"
+print(b[2:5])
+
+
+
+
+Negative Indexing -
+
+Use negative indexes to start the slice from the end of the string:
+
+Example :
+
+Get the characters from position 5 to position 1 (not included), starting the count from the end of the string:
+
+b = "Hello, World!"
+print(b[-5 :- 2])
+
+
+
+
+String Concatenation -
+
+To concatenate, or combine, two strings you can use the + operator.
+
+Example :
+
+Merge variable a with variable b into variable c :
+
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+
+Example :
+
+To add a space between them, add a " "
+
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+
+
+
+
+String Methods -
+
+Python has a set of built-in methods that you can use on strings.
+
+Note: All string methods returns new values. They do not change the original string.
+
+Method                                   Description
+
+capitalize()          Converts the first character to upper case
+
+casefold()      -      Converts string into lower case
+
+center()        -      Returns a centered string
+
+count()         -      Returns the number of times a specified value occurs in a string 
+
+encode()        -      Returns an encoded version of the string
+
+endswith()      -      Returns true if the string ends with the specified value
+
+expandtabs()    -      Sets the tab size of the string
+
+find()          -      Searches the string for a specified value and returns the position of where it was found
+
+format()        -      Formats specified values in a string
+
+format_map()    -      Formats specified values in a string
+
+index()         -      Searches the string for a specified value and returns the position of where it was found
+
+isalnum()       -      Returns True if all characters in the string are alphanumeric
+
+isalpha()       -      Returns True if all characters in the string are in the alphabet
+
+isdecimal()     -      Returns True if all characters in the string are decimals
+
+isdigit()       -      Returns True if all characters in the string are digits
+
+isidentifier()  -      Returns True if the string is an identifier
+
+islower()       -      Returns True if all characters in the string are lower case
+
+isnumeric()     -      Returns True if all characters in the string are numeric
+
+isprintable()   -      Returns True if all characters in the string are printable
+
+isspace()       -      Returns True if all characters in the string are whitespaces
+
+istitle()       -      Returns True if the string follows the rules of a title
+
+isupper()       -      Returns True if all characters in the string are upper case
+
+join()          -      Joins the elements of an iterable to the end of the string
+
+ljust()         -      Returns a left justified version of the string
+
+lower()         -      Converts a string into lower case
+
+lstrip()        -      Returns a left trim version of the string
+
+maketrans()     -      Returns a translation table to be used in translations
+
+partition()     -      Returns a tuple where the string is parted into three parts
+
+replace()       -      Returns a string where a specified value is replaced with a specified value
+
+rfind()         -      Searches the string for a specified value and returns the last position of where it was found
+
+rindex()        -      Searches the string for a specified value and returns the last position of where it was found
+
+rjust()         -      Returns a right justified version of the string
+
+rpartition()    -      Returns a tuple where the string is parted into three parts
+
+rsplit()        -      Splits the string at the specified separator, and returns a list
+
+rstrip()        -      Returns a right trim version of the string
+
+split()         -      Splits the string at the specified separator, and returns a list
+
+splitlines()    -      Splits the string at line breaks and returns a list
+
+startswith()    -      Returns true if the string starts with the specified value
+
+strip()         -      Returns a trimmed version of the string
+
+swapcase()      -      Swaps cases, lower case becomes upper case and vice versa
+
+title()         -      Converts the first character of each word to upper case
+
+translate()     -      Returns a translated string
+
+upper()         -      Converts a string into upper case
+
+zfill()         -      Fills the string with a specified number of 0 values at the beginning.
+
+
+
+
+Python divides the operators in the following groups :
+
+
+    Arithmetic operators
+
+    Assignment operators
+
+    Comparison operators
+
+    Logical operators
+
+    Identity operators
+
+    Membership operators
+
+    Bitwise operators
+
+
+
+
+Arithmetic Operators
+
+
+Arithmetic operators are used with numeric values to perform common mathematical operations:
+
+Operator                                         Name                                                   Example
+
++                                              Addition                                                  x + y
+
+-                                            Subtraction                                                 x - y
+
+*                                           Multiplication                                               x * y
+
+/                                              Division                                                  x / y
+
+%                                               Modulus                                                  x % y
+
+**                                          Exponentiation                                               x ** y
+
+//                                          Floor division                                               x // y
+
+
+Example :
+
+Input -
+x = 15 or x = int(input("Enter Any Number : "))
+y = 4  or y = int(input("Enter Any Number : "))
+
+print(x + y)
+print(x - y)
+print(x * y)
+print(x / y)
+print(x % y)
+print(x ** y)
+print(x // y)
+
+Output-
+19
+11
+60
+3.75
+3
+50625
+3 
+
+Python has two division operators:
+
+/ - Division (returns a float)
+
+// - Floor division (returns an integer)
+
+
+
+
+Assignmrnt Operators
+
+Assignment operators are used to assign values to variables :
+
+Operator                                          Example                                                  Same As
+
+=                                                   x = 5                                                   x = 5
+
++=                                                 x += 3                                                 x = x + 3
+
+-=                                                 x -= 3                                                 x = x - 3
+
+*=                                                 x *= 3                                                 x = x * 3
+
+/=                                                 x /= 3                                                 x = x / 3
+
+%=                                                 x %= 3                                                 x = x % 3
+
+//=                                               x //= 3                                                 x = x // 3
+
+**=                                               x **= 3                                                 x = x ** 3
+
+&=                                                x &= 3                                                  x = x & 3
+
+|=                                                x |= 3                                                  x = x | 3
+
+^=                                                x ^= 3                                                  x = x ^ 3
+
+>>=                                              x >>= 3                                                  x = x >> 3
+
+<<=                                              x <<= 3                                                  x = x << 3
+
+:=                                            print(x := 3)                                             x = 3 print(x)
+
+
+
+
+Comparison Operators
+
+Comparison operators are used to compare two values :
+
+Operator                                         Name                                                         Example
+
+==                                              Equal                                                         x == y
+
+!=                                            Not equal                                                       x != y
+
+>                                            Greater than                                                     x > y
+
+<                                             Less than                                                        x < y
+
+>=                                      Greater than or equal to                                              x >= y
+
+<=                                       Less than or equal to                                                x <= y
+
+Example :
+
+Input -
+x = 5 or x = int(input("Enter Any Number : "))
+y = 3 or y = int(input("Enter Any Number : "))
+
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+print(x >= y)
+print(x <= y)
+
+Output -
+False
+True
+True
+False
+True
+False 
+
+Chaining Comparison Operators :
+
+Python allows you to chain comparison operators:
+
+Example :
+x = 5
+
+print(1 < x < 10)
+
+print(1 < x and x < 10)
+
+
+
+
+Logical Operators :
+
+Logical operators are used to combine conditional statements :
+
+Operator                                                      Description                                                 Example
+
+and                                             Returns True if both statements are true                              x < 5 and  x < 10
+
+or                                            Returns True if one of the statements is true                             x < 5 or x < 4
+
+not                                     Reverse the result, returns False if the result is true                      not(x < 5 and x < 10)
+
+
+
+
+Membership Operators :
+
+Membership operators are used to test if a sequence is presented in an object :
+
+Operator                                                     Description                                                  Example
+
+in                           Returns True if a sequence with the specified value is present in the object                 x in y
+
+not in                     Returns True if a sequence with the specified value is not present in the object             x not in y
+                      
+Example :
+
+if "@" in email:
+    print("Valid email")
+
+
+Important terminology
+- Attribute: Any name accessible using object.name.
+- Method: An attribute that is callable (can be called using ()).
+
+So, every method is an attribute, but not every attribute is a method.
